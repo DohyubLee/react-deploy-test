@@ -3,7 +3,14 @@
 1. Create React App으로 프로젝트 생성
 2. 생성된 프로젝트에서 `gh-pages` 모듈 설치 => npm install gh-pages
 3. package.json 파일에 `predeploy`, `deploy` 스크립트 명령어 추가 and `homepage`도 추가
-   - 앞에 `pre-` 가 붙으면 먼저 실행됨을 의미
+   - scripts 명령어가 같고 앞에 `pre-` 가 붙으면 먼저 실행됨을 의미
+ ```json
+  "scripts":{ 
+    "pre블라블라": "npm run 블라블라 실행시 여기가 먼저 실행", 
+    "블라블라": "어쩌구 저쩌구",
+    "post블라블라": "나중에 실행"
+   }
+```
 ```json
 "scripts":{ 
   "predeploy": "react-scripts build", 
