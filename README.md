@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Create React App으로 생성한 프로젝트 github pages로 배포하기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Create React App으로 프로젝트 생성
+2. 생성된 프로젝트에서 `gh-pages` 모듈 설치 => npm install gh-pages
+3. package.json 파일에 `predeploy`, `deploy` 스크립트 명령어 추가 and `homepage`도 추가
+```json
+"scripts":{ 
+  "predeploy": "react-scripts build", 
+  "deploy": "gh-pages -d build", 
+},
+"homepage": "사용될 도메인 주소, 후에 github repo에서 확인가능"
+```
+4. 프로젝트 github에 올리기
+5. 올린후 repo에서 settings=>pages에가서 우선 master 브랜치로 Source를 설정한뒤 배포될 주소를 발급받아 `homepage`에 입력해준다
+6. 다시 프로젝트로 돌아와서 `npm run deploy`를 실행한뒤  `gh-pages` 브랜치가 생성된걸 확인후 다시 github에 올린다
+7. repo에 `gh-pages`브랜치가 잘 올라왔는지 확인후 Source에서 브랜치를 `gh-pages`로 바꿔준다
+8. 잠시후 이전에 받은 주소로 접속해보면 배포가 된것을 확인할수있다
 
 ## Available Scripts
 
