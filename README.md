@@ -14,7 +14,8 @@
 5. 올린후 repo에서 settings=>pages에가서 우선 master 브랜치로 Source를 설정한뒤 배포될 주소를 발급받아 `homepage`에 입력해준다
 6. 다시 프로젝트로 돌아와서 `npm run deploy`를 실행한뒤  `gh-pages` 브랜치가 생성된걸 확인후 다시 github에 올린다
 7. repo에 `gh-pages`브랜치가 잘 올라왔는지 확인후 Source에서 브랜치를 `gh-pages`로 바꿔준다
-8. 잠시후 이전에 받은 주소로 접속해보면 배포가 된것을 확인할수있다
+8. 잠시후 이전에 받은 주소(https://dohyublee.github.io/react-deploy-test/)로 접속해보면 배포가 된것을 확인할수있다
+9. 
 
 ## Available Scripts
 
